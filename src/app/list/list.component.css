@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Jura|Pacifico|Righteous|Roboto+Condensed|Ubuntu|Open+Sans+Condensed');
+* {
+  padding: 0;
+  margin: 0;
+  ;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+  background: black;
+  height: 95vh;
+  width: 100%;
+  color: white;
+}
+
+.nav {
+  color: black;
+  background: white;
+  width: 40px;
+  height: 90vh;
+  margin-top: 1%;
+  margin-left: 0.5%;
+  padding: 5px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+}
+
+.profile {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  font-size: 20px;
+}
+
+.contact {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  font-size: 20px;
+}
+
+.logout {
+  cursor: pointer;
+  transform: rotate(-90deg);
+  font-size: 20px;
+}
+
+.profile {
+  rotate: 90deg;
+}
+
+.views {
+  background:linear-gradient(transparent 0%, rgba(7, 7, 7, 0.589)), url('../../assets/untitled10.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+  color: white;
+  height: 80vh;
+  margin-top: 5%;
+  position: relative;
+  left: 3%;
+  display: flex;
+  flex-flow: column;
+}
+
+.description{
+    position: relative;
+    left: -20%;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.price{
+    position: relative;
+    left: -20%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.bed{
+    position: relative;
+    left: -20%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.features{
+    position: relative;
+    left: -20%;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.back{
+  font-family: 'Jura';
+}
+
+.list {
+  display: flex;
+  flex-flow: column;
+  width: 50%;
+  height: 80vh;
+  margin-top: 3%;
+  position: absolute;
+  right: -20%;
+}
+
+.r1 {
+  background:url('../../assets/untitled10.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  top: 25px;
+  left: 15px;
+}
+
+.r2 {
+  background:url('../../assets/bed2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  top: 35px;
+  left: 15px;
+}
+
+
+.r3 {
+  background:url('../../assets/bed.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  top: 45px;
+  left: 15px;
+}
+
+.r4 {
+  background:url('../../assets/untitled2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  top: 55px;
+  left: 15px;
+}

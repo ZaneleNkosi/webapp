@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Jura|Pacifico|Righteous|Roboto+Condensed|Ubuntu|Open+Sans+Condensed');
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  background: url('../../assets/mainLobby.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: row;
+  height: 100vh;
+  width: 100%;
+}
+
+.left {
+  font-family: 'Jura';
+  flex: 2;
+  background: rgba(0, 0, 0, 0.438);
+  width: 50%;
+  height: 70%;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.right {
+  flex: 2;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin-top: 15%;
+  position: relative;
+  left: 6%;
+  -webkit-text-stroke: 1px black;
+}
+
+.inputs {
+  margin-top: 20%;
+}
+
+.login {
+  background: transparent;
+  font-size: 20px;
+  padding: 10px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  margin-top: 10px;
+}
+
+span {
+  color: blue;
+  cursor: pointer;
+}
