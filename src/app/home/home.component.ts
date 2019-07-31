@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as firebase from 'firebase';
 import { Users } from '../Users';
+import { Routes, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +11,10 @@ import { Users } from '../Users';
 export class HomeComponent implements OnInit {
  showComp= true;
  user = {} as Users;
+ email;
+ password;
 
-  constructor(
-  ) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
@@ -20,10 +22,14 @@ export class HomeComponent implements OnInit {
   showRegister(){
     this.showComp = !this.showComp
   }
-  login(user: Users) {
-    firebase.auth().signInWithEmailAndPassword(user.email, user.password).then((result) => {
-    location.pathname = 'list/'
-  });
+  sign()
+  {
 
+    firebase.auth().signInWithEmailAndPassword(this.email, this.password)
+    .then( res =>{
+      console.log(res);
+      this.router.navigateByUrl("/list") ;
+
+    })
   }
 }

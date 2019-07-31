@@ -12,25 +12,26 @@
 
       <div class="inputs">
         <div class="login" *ngIf="showComp">
-          <p class="l" (click)="login(user)">LOGIN</p>
-          
+          <p class="l" >LOGIN</p>
+          <br><br>
 
             <label>Email</label><br>
-            <input type="email" placeholder="Enter Email" [(ngModel)]="user.email" required ><br>
+            <input type="email" placeholder="Enter Email" [(ngModel)]="email" required ><br>
 
 
             <label>Password</label><br>
-            <input type="password" placeholder="Enter Password" [(ngModel)]="user.password" required><br>
+            <input type="password" placeholder="Enter Password" [(ngModel)]="password" required><br>
 
-            <a routerLink="/list" class="nav-link"><input type="button" value="Login" class="btn btn-login" ></a>
+            <input type="button" value="Login" class="btn" (click)="sign()">
             <br><br>
-            <p>Don't have an account yet? <span (click)="showRegister()">Register</span></p>
+            <p class="q">Don't have an account yet? <span (click)="showRegister()">Register</span></p>
           
 
         </div>
 
-        <div class="register" *ngIf="!showComp">
- 
+        <div class="login" *ngIf="!showComp">
+          <p class="l">Register</p>
+          <br><br>
 
             <label>email</label><br>
             <input type="email" placeholder="Enter Email" required><br>
@@ -39,8 +40,9 @@
             <label>Password</label><br>
             <input type="text" placeholder="Enter Password" required><br>
 
-            <input type="button" value="Register" class="btn btn-register">
-            <p  (click)="showRegister()">Already Have an account?<span>Login</span></p>
+            <input type="button" value="Register" class="btn">
+            <br><br>
+            <p  (click)="showRegister()" class="q">Already Have an account?<span>Login</span></p>
 
  
 

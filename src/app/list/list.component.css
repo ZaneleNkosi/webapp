@@ -2,7 +2,6 @@
 * {
   padding: 0;
   margin: 0;
-  ;
 }
 
 .container {
@@ -120,6 +119,8 @@
   position: relative;
   top: 25px;
   left: 15px;
+  color: black;
+  font-family: 'Jura';
 }
 
 .r2 {
@@ -133,6 +134,8 @@
   position: relative;
   top: 35px;
   left: 15px;
+  color: black;
+  font-family: 'Jura';
 }
 
 
@@ -147,6 +150,8 @@
   position: relative;
   top: 45px;
   left: 15px;
+  color: white;
+  font-family: 'Jura';
 }
 
 .r4 {
@@ -160,4 +165,6 @@
   position: relative;
   top: 55px;
   left: 15px;
+  color: white;
+  font-family: 'Jura';
 }
